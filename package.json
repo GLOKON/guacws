@@ -1,7 +1,12 @@
 {
   "name": "guacamole-lite",
   "description": "Lite version of guacamole server in node.js. RDP/VNC client for HTML5 browsers",
-  "version": "0.6.3",
+  "version": "0.6.4",
+  "author": {
+    "name": "Vadim Pronin",
+    "email": "git@pronin.com"
+  },
+  "main": "index.js",
   "keywords": [
     "guacamole",
     "rdp",
@@ -10,12 +15,12 @@
   ],
   "maintainers": [
     {
-      "name": "Vadim Pronin",
-      "email": "git@pronin.com"
+      "name": "Daniel McAssey",
+      "email": "dan@glokon.me"
     }
   ],
   "dependencies": {
-    "deep-extend": "^0.4.1",
+    "deep-extend": "^0.6.0",
     "moment": "^2.17.1",
     "ws": "^1.1.2"
   },
@@ -23,11 +28,12 @@
     "node": ">=6"
   },
   "bugs": {
-    "url": "https://github.com/vadimpronin/guacamole-lite/issues"
+    "url": "https://github.com/glokon/guacamole-lite/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vadimpronin/guacamole-lite.git"
+    "url": "https://github.com/glokon/guacamole-lite.git"
   },
+  "homepage": "https://github.com/glokon/guacamole-lite",
   "license": "Apache-2.0"
 }

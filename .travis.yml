@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - node
+cache: npm
+deploy:
+  provider: npm
+  email: daniel.mcassey@gmail.com
+  api_key:
+    secure: PipmUL2BiVAyXLHJRxQnGBClIVAPAZGfBSyyoRMRzPgMlVmSiB728Z6xIfRLSrODv+U8P64hhRqcZ39Gyne4KANNu6bMa43f/xlWKQPMlF6HUdNQPdWI4Aj0tr9qldXCEBE4mKHoIz2Wd4nbev6sbhDycaYxWlmPb7LKUYmxaanYJwTDg+wCwACS5+IKvwsphQ0/fqMTquO4Vz6kXV8Mn30QAv0MnjU4sEdRPf3rmEpSfQYiQcwU4jnBhUFRb98NUo6vD3Gs5Hy50ZnxG9mPfwFJgb/JsoOnpgHBfOymfH1oYdhs8LtUk7YFdUDZMJ43vzHxxy7PPnJjjSxIHyh+RCvM4W1tLyTyEMk4zzA+Emh/8hmCwYuMVMgRJgixTYvbI/EZG6ncRoOeMnjElJTe3B1Md9fo+sd7Sg5wtYT09IDgF1wMhMYZ3J26ibPHTuRvr7G0hHX5vw9HUoPx92UbHLBTcp+kAGzSkpScAXBjJSSr7ikRoJ1AUTvtzoIMENExoMO//3qqvWBs6aaXtF0261mlrWCob30giLu93vHmQcov+PVPMusDXS8KEGHZ+6DWlOyaRp0wlJzn0qWagx3hnLfxlYzHZWbvosaCj8/Qkw72mdHK6Ex0gCe0i6Ofi0tFSICZwjh9qd+9XjNH8RSxNB0r5ixmENaC2d89KbRnxbo=
+  on:
+    tags: true
+    repo: glokon/guacamole-lite
