@@ -1,5 +1,5 @@
 {
-  "name": "guacamole-lite",
+  "name": "@glokon/guacamole-lite",
   "description": "Lite version of guacamole server in node.js. RDP/VNC client for HTML5 browsers",
   "version": "0.6.4",
   "author": {
