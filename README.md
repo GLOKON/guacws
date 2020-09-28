@@ -1,4 +1,6 @@
-# guacamole-lite
+# guacamole-lite [![Build Status](https://travis-ci.org/DanielMcAssey/guacamole-lite.svg?branch=master)](https://travis-ci.org/DanielMcAssey/guacamole-lite)
+
+This is a fork of the hard work done by **Vadim Pronin** https://github.com/vadimpronin/guacamole-lite
 
 ## Synopsis
 
@@ -15,7 +17,7 @@ This diagram describes the architecture of Guacamole and the role of *guacamole-
 ## Installation
 
 ```
-npm install --save guacamole-lite
+npm install --save @glokon/guacamole-lite
 ```
 
 ## Code Example
