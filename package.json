@@ -35,5 +35,8 @@
     "url": "https://github.com/glokon/guacamole-lite.git"
   },
   "homepage": "https://github.com/glokon/guacamole-lite",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  }
 }
