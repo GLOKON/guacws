@@ -1,4 +1,4 @@
-# guacamole-lite [![Build Status](https://travis-ci.org/DanielMcAssey/guacamole-lite.svg?branch=master)](https://travis-ci.org/DanielMcAssey/guacamole-lite)
+# guacamole-lite [![Build Status](https://travis-ci.org/GLOKON/guacamole-lite.svg?branch=master)](https://travis-ci.org/GLOKON/guacamole-lite)
 
 This is a fork of the hard work done by **Vadim Pronin** https://github.com/vadimpronin/guacamole-lite
 
