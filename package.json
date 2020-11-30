@@ -7,6 +7,9 @@
     "email": "git@pronin.com"
   },
   "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
   "keywords": [
     "guacamole",
     "rdp",
