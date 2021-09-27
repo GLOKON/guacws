@@ -1,34 +1,39 @@
 {
-  "name": "@glokon/guacamole-lite",
+  "name": "@hurdlegroup/guacamole-lite",
   "description": "Lite version of guacamole server in node.js. RDP/VNC client for HTML5 browsers",
   "version": "0.9.1",
   "author": {
     "name": "Vadim Pronin",
     "email": "git@pronin.com"
   },
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "exit 0"
+    "start": "node server.js",
+    "test": "jest"
   },
   "keywords": [
     "guacamole",
     "rdp",
     "vnc",
-    "remote desktop"
+    "remote desktop",
+    "docker"
   ],
   "maintainers": [
     {
       "name": "Daniel McAssey",
-      "email": "dan@glokon.me"
+      "email": "daniel.mcassey@hurdle.live"
     }
   ],
   "dependencies": {
     "deep-extend": "^0.6.0",
-    "moment": "^2.17.1",
-    "ws": "^1.1.2"
+    "moment": "^2.29.1",
+    "ws": "^8.2.2"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=14"
   },
   "bugs": {
     "url": "https://github.com/glokon/guacamole-lite/issues"
@@ -41,5 +46,15 @@
   "license": "Apache-2.0",
   "publishConfig": {
     "access": "public"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.4",
+    "utf-8-validate": "^5.0.6"
   }
 }
