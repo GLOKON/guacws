@@ -1,3 +1,10 @@
+## [0.10.3](https://github.com/glokon/guacamole-lite/compare/v0.10.2...v0.10.3) (2021-10-08)
+
+
+### Bug Fixes
+
+* **ws:** fix websocket not parsing query ([555193c](https://github.com/glokon/guacamole-lite/commit/555193c4b8825c35cfebd0d29aff510fa02a708a))
+
 ## [0.10.2](https://github.com/glokon/guacamole-lite/compare/v0.10.1...v0.10.2) (2021-10-08)
 
 
