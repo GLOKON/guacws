@@ -4,7 +4,7 @@ plugins:
   - - "@semantic-release/changelog"
     - changelogFile: CHANGELOG.md
   - - "@semantic-release/exec"
-    - prepareCmd: "docker build -t ${IMAGE_NAME}:latest ."
+    - prepareCmd: "docker build -t hurdlegroup/guacamole-lite:latest ."
   - - "@semantic-release/git"
     - assets:
         - CHANGELOG.md
@@ -12,4 +12,4 @@ plugins:
   - "@semantic-release/github"
   - "@semantic-release/npm"
   - - "@eclass/semantic-release-docker"
-    - baseImageName: "${IMAGE_NAME}"
+    - baseImageName: "hurdlegroup/guacamole-lite"
