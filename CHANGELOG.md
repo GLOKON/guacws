@@ -1,3 +1,10 @@
+## [0.10.2](https://github.com/glokon/guacamole-lite/compare/v0.10.1...v0.10.2) (2021-10-08)
+
+
+### Bug Fixes
+
+* **server:** fix logs and include version number ([1258d70](https://github.com/glokon/guacamole-lite/commit/1258d70b0dfee3cb4addd02ad18532cec75d2fe8))
+
 ## [0.10.1](https://github.com/glokon/guacamole-lite/compare/v0.10.0...v0.10.1) (2021-10-08)
 
 
