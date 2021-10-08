@@ -1,0 +1,26 @@
+name: Create and publish a Docker image
+on:
+  push:
+    branches:
+      - 'master'
+    tags:
+      - 'v*'
+jobs:
+  release_npm:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: 14
+        registry-url: https://registry.npmjs.org/
+    - name: Install dependencies
+      run: npx ci
+    - name: Test
+      run: npm run test
+    - name: Release
+      env:
+        IMAGE_NAME: ${{ github.repository }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      run: npx semantic-release
