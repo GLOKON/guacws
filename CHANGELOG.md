@@ -1,3 +1,10 @@
+## [0.10.1](https://github.com/glokon/guacamole-lite/compare/v0.10.0...v0.10.1) (2021-10-08)
+
+
+### Bug Fixes
+
+* **readme:** fix typo ([4ff7495](https://github.com/glokon/guacamole-lite/commit/4ff74952c8bf28df17454eeddbdd64c504163c96))
+
 # [0.10.0](https://github.com/glokon/guacamole-lite/compare/v0.9.1...v0.10.0) (2021-10-08)
 
 
