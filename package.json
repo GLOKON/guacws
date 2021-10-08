@@ -30,7 +30,7 @@
     "ws": "^8.2.3"
   },
   "devDependencies": {
-    "@eclass/semantic-release-docker": "^1.1.0",
+    "@codedependant/semantic-release-docker": "^3.1.2",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/exec": "^6.0.1",
     "@semantic-release/git": "^9.0.1",

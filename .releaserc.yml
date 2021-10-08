@@ -11,5 +11,5 @@ plugins:
       message: "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
   - "@semantic-release/github"
   - "@semantic-release/npm"
-  - - "@eclass/semantic-release-docker"
-    - baseImageName: "hurdlegroup/guacamole-lite"
+  - - "@codedependant/semantic-release-docker"
+    - dockerLogin: false
