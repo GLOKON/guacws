@@ -1,5 +1,5 @@
-![Build Status](https://github.com/glokon/guacamole-lite/actions/workflows/release.yml/badge.svg)
-![Code Quality Status](https://github.com/glokon/guacamole-lite/actions/workflows/codeql-analysis.yml/badge.svg)
+[![Builld](https://github.com/GLOKON/guacamole-lite/actions/workflows/release.yml/badge.svg)](https://github.com/GLOKON/guacamole-lite/actions/workflows/release.yml)
+[![CodeQL](https://github.com/GLOKON/guacamole-lite/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/GLOKON/guacamole-lite/actions/workflows/codeql-analysis.yml)
 # guacamole-lite
 
 This is a fork of the hard work done by **Vadim Pronin** https://github.com/vadimpronin/guacamole-lite
