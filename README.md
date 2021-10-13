@@ -1,5 +1,5 @@
-![Build Status](https://github.com/hurdlegroup/guacamole-lite/actions/workflows/release.yml/badge.svg)
-![Code Quality Status](https://github.com/hurdlegroup/guacamole-lite/actions/workflows/codeql-analysis.yml/badge.svg)
+![Build Status](https://github.com/glokon/guacamole-lite/actions/workflows/release.yml/badge.svg)
+![Code Quality Status](https://github.com/glokon/guacamole-lite/actions/workflows/codeql-analysis.yml/badge.svg)
 # guacamole-lite
 
 This is a fork of the hard work done by **Vadim Pronin** https://github.com/vadimpronin/guacamole-lite
@@ -19,7 +19,7 @@ This diagram describes the architecture of Guacamole and the role of *guacamole-
 ## Installation
 
 ```
-npm install --save @hurdlegroup/guacamole-lite
+npm install --save @glokon/guacamole-lite
 ```
 
 ## Code Example

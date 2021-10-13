@@ -4,7 +4,7 @@ plugins:
   - - "@semantic-release/changelog"
     - changelogFile: CHANGELOG.md
   - - "@semantic-release/exec"
-    - prepareCmd: "docker build -t hurdlegroup/guacamole-lite:latest ."
+    - prepareCmd: "docker build -t glokon/guacamole-lite:latest ."
   - - "@semantic-release/git"
     - assets:
         - CHANGELOG.md
