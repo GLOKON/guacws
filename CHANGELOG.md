@@ -1,3 +1,15 @@
+# [0.11.0](https://github.com/glokon/guacamole-lite/compare/v0.10.3...v0.11.0) (2021-10-13)
+
+
+### Features
+
+* **main:** initial release ([f306782](https://github.com/glokon/guacamole-lite/commit/f306782dd725d7246c437d78d597d1e96a8cbd4f))
+
+
+### Performance Improvements
+
+* **readme:** fix wrong status badges ([a7c4b0f](https://github.com/glokon/guacamole-lite/commit/a7c4b0fe9d779fbf13125cf117f48ef69d7b9ee7))
+
 ## [0.10.3](https://github.com/glokon/guacamole-lite/compare/v0.10.2...v0.10.3) (2021-10-08)
 
 
