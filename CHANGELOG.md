@@ -1,3 +1,10 @@
+## [0.11.1](https://github.com/glokon/guacamole-lite/compare/v0.11.0...v0.11.1) (2022-10-25)
+
+
+### Bug Fixes
+
+* **log:** clean up logging and use a simplified format ([a230cdf](https://github.com/glokon/guacamole-lite/commit/a230cdf4850bb61aa11b1b47ce86708d8ca91b3d))
+
 # [0.11.0](https://github.com/glokon/guacamole-lite/compare/v0.10.3...v0.11.0) (2021-10-13)
 
 
