@@ -1,3 +1,7 @@
 node_modules/
 *.log
 *.test.js
+.gitignore
+.releaserc.yml
+Dockerfile
+.github/

@@ -2,20 +2,42 @@
 
 const packageFile = require('./package.json');
 const GuacamoleLite = require('./lib/Server');
+const { createLogger, transports, format } = require('winston');
+const { combine, splat, timestamp, printf } = format;
 
 const PORT = process.env.PORT || 8080;
 const CRYPT_SECRET = process.env.CRYPT_SECRET;
 const CRYPT_CYPHER = process.env.CRYPT_CYPHER || 'AES-256-CBC';
 const GUACD_HOST = process.env.GUACD_HOST || '127.0.0.1';
 const GUACD_PORT = process.env.GUACD_PORT || 4822;
-const LOG_LEVEL = process.env.LOG_LEVEL || 20;
+
+const loggerFormat = printf( ({ level, message, timestamp , ...metadata}) => {
+    let msg = `${timestamp} [${level}] : ${message} `
+    if(metadata) {
+        msg += JSON.stringify(metadata)
+    }
+    return msg
+});
+
+const logger = createLogger({
+    level: process.env.LOG_LEVEL || 'info',
+    format: format.combine(
+        format.colorize(),
+        splat(),
+        timestamp(),
+        loggerFormat
+    ),
+    transports: [
+        new transports.Console(),
+    ]
+});
 
 function start(cryptKey, cryptCypher , websocketPort , guacdHost, guacdPort) {
-    console.info('[HURDLE/GUACWS] Starting Server');
-    console.info('[HURDLE/GUACWS] Version ' + packageFile.version);
+    logger.info('[GUACWS] Starting Server');
+    logger.info('[GUACWS] Version ' + packageFile.version);
 
     if (!cryptKey || cryptKey.length === 0) {
-        console.error('[HURDLE/GUACWS] No secret key specified, please specify a key with CRYPT_SECRET environment variable');
+        logger.error('[GUACWS] No secret key specified, please specify a key with CRYPT_SECRET environment variable');
         return;
     }
 
@@ -29,24 +51,21 @@ function start(cryptKey, cryptCypher , websocketPort , guacdHost, guacdPort) {
     };
 
     const clientOptions = {
-        log: {
-            level: LOG_LEVEL,
-        },
         crypt: {
             cypher: cryptCypher,
             key: cryptKey
         }
     };
 
-    console.info('[HURDLE/GUACWS] WebSocket on ws://0.0.0.0:' + websocketPort);
-    console.info('[HURDLE/GUACWS] GuacD host on ' + guacdHost + ':' + guacdPort);
-    return new GuacamoleLite(websocketOptions, guacdOptions, clientOptions);
+    logger.info('[GUACWS] WebSocket on ws://0.0.0.0:' + websocketPort);
+    logger.info('[GUACWS] GuacD host on ' + guacdHost + ':' + guacdPort);
+    return new GuacamoleLite(logger, websocketOptions, guacdOptions, clientOptions);
 }
 
 const server = start(CRYPT_SECRET, CRYPT_CYPHER, PORT, GUACD_HOST, GUACD_PORT);
 if (server) {
-    console.info('[HURDLE/GUACWS] WebSocket Tunnel running on ws://0.0.0.0:' + PORT);
+    logger.info('[GUACWS] WebSocket Tunnel running on ws://0.0.0.0:' + PORT);
 } else {
-    console.error('[HURDLE/GUACWS] Failed to start WebSocket Tunnel');
+    logger.error('[GUACWS] Failed to start WebSocket Tunnel');
 }
 
