@@ -8,8 +8,7 @@ RUN set -ex; \
         gnupg \
         ca-certificates \
         supervisor \
-        pulseaudio-utils \
-        pulseaudio \
+#        pulseaudio \
         ghostscript \
     ; \
     curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - ; \
@@ -54,7 +53,11 @@ ENV GUACD_HOST=127.0.0.1
 ENV GUACD_PORT=4822
 ENV CRYPT_CYPHER='AES-256-CBC'
 ENV LOG_LEVEL='info'
+ENV USER_DRIVE_ROOT='/user-drives'
 EXPOSE 8080
+
+# Specity user drive volume
+VOLUME /user-drives
 
 # Create app directory
 WORKDIR /usr/src/app

@@ -10,6 +10,7 @@ const CRYPT_SECRET = process.env.CRYPT_SECRET;
 const CRYPT_CYPHER = process.env.CRYPT_CYPHER || 'AES-256-CBC';
 const GUACD_HOST = process.env.GUACD_HOST || '127.0.0.1';
 const GUACD_PORT = process.env.GUACD_PORT || 4822;
+const USER_DRIVE_ROOT = process.env.USER_DRIVE_ROOT || '/tmp/drives'
 
 const loggerFormat = printf( ({ level, message, timestamp , ...metadata}) => {
     let msg = `${timestamp} [${level}] : ${message} `
@@ -57,9 +58,19 @@ function start(cryptKey, cryptCypher , websocketPort , guacdHost, guacdPort) {
         }
     };
 
+    const callbacks = {
+        processConnectionSettings: function (settings, callback) {
+            if (settings.userFolder) {
+                settings.connection['drive-path'] = USER_DRIVE_ROOT + '/user_' + settings.userFolder;
+            }
+
+            callback(null, settings);
+        }
+    };
+
     logger.info('[GUACWS] WebSocket on ws://0.0.0.0:' + websocketPort);
     logger.info('[GUACWS] GuacD host on ' + guacdHost + ':' + guacdPort);
-    return new GuacamoleLite(logger, websocketOptions, guacdOptions, clientOptions);
+    return new GuacamoleLite(logger, websocketOptions, guacdOptions, clientOptions, callbacks);
 }
 
 const server = start(CRYPT_SECRET, CRYPT_CYPHER, PORT, GUACD_HOST, GUACD_PORT);
