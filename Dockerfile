@@ -1,24 +1,26 @@
 FROM guacamole/guacd
 
+USER root
 RUN set -ex; \
-    apt-get update -yq; \
-    apt-get install -yq --no-install-recommends \
+    apt-get update -y; \
+    apt-get install -y --no-install-recommends \
         curl \
         gnupg \
         ca-certificates \
         supervisor \
         pulseaudio \
-        ghostscript \
     ; \
     curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - ; \
-    apt-get update -yq; \
+    apt-get update -y; \
     rm -rf /var/lib/apt/lists/* ; \
-    apt-get install -yq --no-install-recommends \
+    apt-get install -y --no-install-recommends \
         nodejs \
     ; \
     sed -i \
         -e 's|#load-module module-native-protocol-tcp|load-module module-native-protocol-tcp auth-anonymous=1|g' \
         /etc/pulse/default.pa
+
+USER guacd
 
 # Arguments to label built container
 ARG GIT_SHA
