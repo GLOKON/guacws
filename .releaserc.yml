@@ -3,13 +3,11 @@ plugins:
   - "@semantic-release/release-notes-generator"
   - - "@semantic-release/changelog"
     - changelogFile: CHANGELOG.md
-  - - "@semantic-release/exec"
-    - prepareCmd: "docker build -t glokon/guacamole-lite:latest ."
   - - "@semantic-release/git"
     - assets:
         - CHANGELOG.md
       message: "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
   - "@semantic-release/github"
+  - "@semantic-release/npm"
   - - "@codedependant/semantic-release-docker"
     - dockerLogin: false
-  - "@semantic-release/npm"
