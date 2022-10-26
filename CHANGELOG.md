@@ -1,3 +1,10 @@
+# [0.12.0](https://github.com/glokon/guacamole-lite/compare/v0.11.3...v0.12.0) (2022-10-26)
+
+
+### Features
+
+* **guac:** integrate GuacD into same image ([caed5b4](https://github.com/glokon/guacamole-lite/commit/caed5b4e3241d03bde39ecb7369fa1618984dee9))
+
 ## [0.11.3](https://github.com/glokon/guacamole-lite/compare/v0.11.2...v0.11.3) (2022-10-26)
 
 
