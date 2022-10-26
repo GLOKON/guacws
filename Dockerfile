@@ -8,7 +8,8 @@ RUN set -ex; \
         gnupg \
         ca-certificates \
         supervisor \
-        pulseaudio=12.2-4+deb10u1 \
+        pulseaudio-utils \
+        pulseaudio \
         ghostscript \
     ; \
     curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - ; \
