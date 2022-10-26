@@ -1,3 +1,10 @@
+## [0.11.3](https://github.com/glokon/guacamole-lite/compare/v0.11.2...v0.11.3) (2022-10-26)
+
+
+### Bug Fixes
+
+* **ci:** reduce duplicate builds ([eb843a0](https://github.com/glokon/guacamole-lite/commit/eb843a072d27dcea979f1f30758430e4ecbf6cb5))
+
 ## [0.11.2](https://github.com/glokon/guacamole-lite/compare/v0.11.1...v0.11.2) (2022-10-26)
 
 
