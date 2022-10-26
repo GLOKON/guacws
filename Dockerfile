@@ -11,7 +11,7 @@ RUN set -ex; \
 #        pulseaudio \
         ghostscript \
     ; \
-    curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - ; \
+    curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - ; \
     apt-get update -y; \
     rm -rf /var/lib/apt/lists/* ; \
     apt-get install -y --no-install-recommends \
