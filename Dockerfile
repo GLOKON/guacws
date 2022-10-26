@@ -16,10 +16,10 @@ RUN set -ex && \
     apt-get install -y --no-install-recommends \
         nodejs \
     && \
-    rm -rf /var/lib/apt/lists/* && \
-    sed -i \
-        -e 's|#load-module module-native-protocol-tcp|load-module module-native-protocol-tcp auth-anonymous=1|g' \
-        /etc/pulse/default.pa
+    rm -rf /var/lib/apt/lists/*
+#    sed -i \
+#        -e 's|#load-module module-native-protocol-tcp|load-module module-native-protocol-tcp auth-anonymous=1|g' \
+#        /etc/pulse/default.pa
 
 USER guacd
 
