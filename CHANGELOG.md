@@ -1,3 +1,10 @@
+## [0.11.2](https://github.com/glokon/guacamole-lite/compare/v0.11.1...v0.11.2) (2022-10-26)
+
+
+### Bug Fixes
+
+* **ci:** update workflows ([ee729b3](https://github.com/glokon/guacamole-lite/commit/ee729b332b46be15d5ccbc1b055a673b467a41dd))
+
 ## [0.11.1](https://github.com/glokon/guacamole-lite/compare/v0.11.0...v0.11.1) (2022-10-25)
 
 
