@@ -1,3 +1,10 @@
+# [0.13.0](https://github.com/glokon/guacamole-lite/compare/v0.12.0...v0.13.0) (2022-10-26)
+
+
+### Features
+
+* **server:** parametrizing user inactivity time ([01b5963](https://github.com/glokon/guacamole-lite/commit/01b5963c746b581ee6120aa775e89cb5204cf525))
+
 # [0.12.0](https://github.com/glokon/guacamole-lite/compare/v0.11.3...v0.12.0) (2022-10-26)
 
 
