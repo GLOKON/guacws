@@ -1,3 +1,10 @@
+## [0.13.1](https://github.com/glokon/guacamole-lite/compare/v0.13.0...v0.13.1) (2022-10-26)
+
+
+### Bug Fixes
+
+* **docker:** fix permissions of supervisor ([2856e76](https://github.com/glokon/guacamole-lite/commit/2856e76944e4f982c8ecb90fe22b052298ff55d8))
+
 # [0.13.0](https://github.com/glokon/guacamole-lite/compare/v0.12.0...v0.13.0) (2022-10-26)
 
 
