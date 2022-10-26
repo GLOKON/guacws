@@ -1,8 +1,8 @@
 FROM guacamole/guacd
 
 USER root
-RUN set -ex; \
-    apt-get update -y; \
+RUN set -ex && \
+    apt-get update -y && \
     apt-get install -y --no-install-recommends \
         curl \
         gnupg \
@@ -10,13 +10,13 @@ RUN set -ex; \
         supervisor \
 #        pulseaudio \
         ghostscript \
-    ; \
-    curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - ; \
-    apt-get update -y; \
-    rm -rf /var/lib/apt/lists/* ; \
+    && \
+    curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - && \
+    apt-get update -y && \
+    rm -rf /var/lib/apt/lists/* && \
     apt-get install -y --no-install-recommends \
         nodejs \
-    ; \
+    && \
     sed -i \
         -e 's|#load-module module-native-protocol-tcp|load-module module-native-protocol-tcp auth-anonymous=1|g' \
         /etc/pulse/default.pa
