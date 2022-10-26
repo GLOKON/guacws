@@ -1,6 +1,18 @@
 # [0.12.0](https://github.com/glokon/guacamole-lite/compare/v0.11.3...v0.12.0) (2022-10-26)
 
 
+### Bug Fixes
+
+* **docker:** fix image ([8d92da9](https://github.com/glokon/guacamole-lite/commit/8d92da9a58b44e3fb50316568df43218f75072ab))
+
+
+### Features
+
+* **guac:** integrate GuacD into same image ([caed5b4](https://github.com/glokon/guacamole-lite/commit/caed5b4e3241d03bde39ecb7369fa1618984dee9))
+
+# [0.12.0](https://github.com/glokon/guacamole-lite/compare/v0.11.3...v0.12.0) (2022-10-26)
+
+
 ### Features
 
 * **guac:** integrate GuacD into same image ([caed5b4](https://github.com/glokon/guacamole-lite/commit/caed5b4e3241d03bde39ecb7369fa1618984dee9))
