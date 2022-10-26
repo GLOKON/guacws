@@ -10,6 +10,25 @@
 * **docker:** fix version mismatch ([cf559fa](https://github.com/glokon/guacamole-lite/commit/cf559fa5a816365b393ec46eb2afd9bde1fa2794))
 * **docker:** temporarily disable pulseaudio ([fec3952](https://github.com/glokon/guacamole-lite/commit/fec39528c32e22082a0c9735106cf1992351599b))
 * **docker:** tweak dockerfile ([b70cac5](https://github.com/glokon/guacamole-lite/commit/b70cac5b2cc31262e1668e5a9b7a5ed6a2b7307c))
+* **docker:** tweak file ([79a011d](https://github.com/glokon/guacamole-lite/commit/79a011d48b181b20d38df567bd408535c1e8a934))
+
+
+### Features
+
+* **guac:** integrate GuacD into same image ([caed5b4](https://github.com/glokon/guacamole-lite/commit/caed5b4e3241d03bde39ecb7369fa1618984dee9))
+
+# [0.12.0](https://github.com/glokon/guacamole-lite/compare/v0.11.3...v0.12.0) (2022-10-26)
+
+
+### Bug Fixes
+
+* **docker:** add pulseaudio-utils ([54cfed7](https://github.com/glokon/guacamole-lite/commit/54cfed7680b6b1f87978b95e7ca766c82961065a))
+* **docker:** fix docker ([cade8e3](https://github.com/glokon/guacamole-lite/commit/cade8e3d249697fe70ff8248b8935c2d7b508958))
+* **docker:** fix image ([8d92da9](https://github.com/glokon/guacamole-lite/commit/8d92da9a58b44e3fb50316568df43218f75072ab))
+* **docker:** fix pulse audio ([6e7d528](https://github.com/glokon/guacamole-lite/commit/6e7d5281635a3bae35a87cfe63a6f013204d08f0))
+* **docker:** fix version mismatch ([cf559fa](https://github.com/glokon/guacamole-lite/commit/cf559fa5a816365b393ec46eb2afd9bde1fa2794))
+* **docker:** temporarily disable pulseaudio ([fec3952](https://github.com/glokon/guacamole-lite/commit/fec39528c32e22082a0c9735106cf1992351599b))
+* **docker:** tweak dockerfile ([b70cac5](https://github.com/glokon/guacamole-lite/commit/b70cac5b2cc31262e1668e5a9b7a5ed6a2b7307c))
 
 
 ### Features
