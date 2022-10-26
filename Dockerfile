@@ -3,13 +3,12 @@ FROM guacamole/guacd
 USER root
 RUN set -ex; \
     apt-get update -y; \
-    dpkg -P --force-depends libpulse0; \
     apt-get install -y --no-install-recommends \
         curl \
         gnupg \
         ca-certificates \
         supervisor \
-        pulseaudio \
+        pulseaudio=12.2-4+deb10u1 \
         ghostscript \
     ; \
     curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - ; \
