@@ -21,8 +21,6 @@ RUN set -ex && \
 #        -e 's|#load-module module-native-protocol-tcp|load-module module-native-protocol-tcp auth-anonymous=1|g' \
 #        /etc/pulse/default.pa
 
-USER guacd
-
 # Arguments to label built container
 ARG GIT_SHA
 ARG GIT_TAG=1.0.0
@@ -60,7 +58,7 @@ EXPOSE 8080
 VOLUME /user-drives
 
 # Create app directory
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
