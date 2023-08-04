@@ -1,3 +1,10 @@
+## [0.13.2](https://github.com/glokon/guacamole-lite/compare/v0.13.1...v0.13.2) (2023-08-04)
+
+
+### Bug Fixes
+
+* **rename:** Update package.json ([2db81ec](https://github.com/glokon/guacamole-lite/commit/2db81ecb5ba1128ac6603b9bab2ff1fa1ea4900f))
+
 ## [0.13.1](https://github.com/glokon/guacamole-lite/compare/v0.13.0...v0.13.1) (2022-10-26)
 
 
