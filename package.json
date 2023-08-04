@@ -1,6 +1,6 @@
 {
-  "name": "@glokon/guacamole-lite",
-  "description": "Lite version of guacamole server in node.js. RDP/VNC client for HTML5 browsers",
+  "name": "@glokon/guacws",
+  "description": "Standalone WebSocket Guacamole server in node.js. RDP/VNC/SSH client for HTML5 browsers",
   "version": "0.0.0-development",
   "author": {
     "name": "Vadim Pronin",
