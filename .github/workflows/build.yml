@@ -36,4 +36,4 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         push: false
-        tags: ${{ github.repository }}:latest
+        tags: glokon/guacws:latest
