@@ -3,6 +3,15 @@
 
 ### Bug Fixes
 
+* **build:** update to alpine ([b291e73](https://github.com/glokon/guacamole-lite/commit/b291e73d98d26ab622f38bda621f27df6ac176f6))
+* **ci:** fix build ([704cd51](https://github.com/glokon/guacamole-lite/commit/704cd5143983fbebf1f82f0745509da6d285e5d2))
+* **rename:** Update package.json ([2db81ec](https://github.com/glokon/guacamole-lite/commit/2db81ecb5ba1128ac6603b9bab2ff1fa1ea4900f))
+
+## [0.13.2](https://github.com/glokon/guacamole-lite/compare/v0.13.1...v0.13.2) (2023-08-06)
+
+
+### Bug Fixes
+
 * **ci:** fix build ([704cd51](https://github.com/glokon/guacamole-lite/commit/704cd5143983fbebf1f82f0745509da6d285e5d2))
 * **rename:** Update package.json ([2db81ec](https://github.com/glokon/guacamole-lite/commit/2db81ecb5ba1128ac6603b9bab2ff1fa1ea4900f))
 
