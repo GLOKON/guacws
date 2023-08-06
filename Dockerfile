@@ -2,12 +2,8 @@ FROM guacamole/guacd
 
 USER root
 RUN apk update && apk add --no-cache && \
-        pulseaudio \
         supervisor \
-        nodejs npm && \
-    sed -i \
-        -e 's|#load-module module-native-protocol-tcp|load-module module-native-protocol-tcp auth-anonymous=1|g' \
-        /etc/pulse/default.pa
+        nodejs npm
 
 # Arguments to label built container
 ARG GIT_SHA
