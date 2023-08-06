@@ -1,0 +1,39 @@
+name: Build
+on:
+  push:
+    branches:
+      - '*'
+      - '!master'
+env:
+  IMAGE_NAME: ${{ github.repository }}
+jobs:
+  release_npm:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 'lts/*'
+    - name: Install dependencies
+      run: npx ci
+    - name: Test
+      run: npm run test
+    - name: Extract metadata (tags, labels) for Docker
+      id: meta
+      uses: docker/metadata-action@v4
+      with:
+        images: ${{ env.IMAGE_NAME }}
+        tags: |
+          type=ref,event=branch
+          type=ref,event=pr
+          type=semver,pattern={{version}}
+          type=semver,pattern={{major}}.{{minor}}
+    - name: Build
+      uses: docker/build-push-action@v4
+      with:
+        push: false
+        tags: ${{ github.repository }}:latest
