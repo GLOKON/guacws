@@ -8,7 +8,7 @@ on:
 env:
   IMAGE_NAME: ${{ github.repository }}
 jobs:
-  release_npm:
+  release:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
