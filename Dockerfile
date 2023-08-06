@@ -1,9 +1,7 @@
 FROM guacamole/guacd
 
 USER root
-RUN apk update && apk add --no-cache && \
-        supervisor \
-        nodejs npm
+RUN apk update && apk add --no-cache supervisor nodejs npm
 
 # Arguments to label built container
 ARG GIT_SHA
