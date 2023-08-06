@@ -1,7 +1,7 @@
 FROM guacamole/guacd
 
 USER root
-RUN apk add --no-cache && \
+RUN apk update && apk add --no-cache \
         pulseaudio \
         supervisor \
         nodejs npm && \

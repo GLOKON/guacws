@@ -2,12 +2,12 @@ name: Build
 on:
   push:
     branches:
-      - '*'
+      - '**'
       - '!master'
 env:
   IMAGE_NAME: ${{ github.repository }}
 jobs:
-  release_npm:
+  build:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -36,4 +36,4 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         push: false
-        tags: ${{ github.repository }}:latest
+        tags: glokon/guacws:latest
