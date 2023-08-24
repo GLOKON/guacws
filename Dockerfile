@@ -42,6 +42,9 @@ ENV LOG_LEVEL='info'
 ENV USER_DRIVE_ROOT='/user-drives'
 EXPOSE 8080
 
+RUN mkdir -p /user-drives
+RUN chown -R guacd:guacd /user-drives
+
 # Specity user drive volume
 VOLUME /user-drives
 
