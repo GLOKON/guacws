@@ -1,3 +1,11 @@
+## [0.13.3](https://github.com/glokon/guacamole-lite/compare/v0.13.2...v0.13.3) (2023-08-24)
+
+
+### Bug Fixes
+
+* **guac:** improve efficiency ([1b8c609](https://github.com/glokon/guacamole-lite/commit/1b8c6092848d8510019e69a7315efcf09746ae2c))
+* **guacws:** fix permissions ([b920f06](https://github.com/glokon/guacamole-lite/commit/b920f06c51896736c7a1f0172e7545c9b8cbea18))
+
 ## [0.13.2](https://github.com/glokon/guacamole-lite/compare/v0.13.1...v0.13.2) (2023-08-06)
 
 
