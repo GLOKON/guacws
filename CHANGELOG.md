@@ -1,3 +1,10 @@
+# [0.14.0](https://github.com/glokon/guacamole-lite/compare/v0.13.3...v0.14.0) (2024-01-04)
+
+
+### Features
+
+* **app:** add support for SSL certificate as part of the container ([7af3597](https://github.com/glokon/guacamole-lite/commit/7af3597e8d66fad7bc2a1011ce60bdba7b5a521a))
+
 ## [0.13.3](https://github.com/glokon/guacamole-lite/compare/v0.13.2...v0.13.3) (2023-08-24)
 
 
