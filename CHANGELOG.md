@@ -1,3 +1,10 @@
+## [0.14.1](https://github.com/glokon/guacamole-lite/compare/v0.14.0...v0.14.1) (2024-01-04)
+
+
+### Bug Fixes
+
+* **ci:** update packages ([b2b6386](https://github.com/glokon/guacamole-lite/commit/b2b638622ebbe252408fefa86f824f88b3a97334))
+
 # [0.14.0](https://github.com/glokon/guacamole-lite/compare/v0.13.3...v0.14.0) (2024-01-04)
 
 
