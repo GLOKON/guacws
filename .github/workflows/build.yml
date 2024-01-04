@@ -18,13 +18,15 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 'lts/*'
+        cache: 'npm'
+        cache-dependency-path: '**/package-lock.json'
     - name: Install dependencies
       run: npx ci
     - name: Test
       run: npm run test
     - name: Extract metadata (tags, labels) for Docker
       id: meta
-      uses: docker/metadata-action@v4
+      uses: docker/metadata-action@v5
       with:
         images: ${{ env.IMAGE_NAME }}
         tags: |
@@ -33,7 +35,7 @@ jobs:
           type=semver,pattern={{version}}
           type=semver,pattern={{major}}.{{minor}}
     - name: Build
-      uses: docker/build-push-action@v4
+      uses: docker/build-push-action@v5
       with:
         push: false
         tags: glokon/guacws:latest
