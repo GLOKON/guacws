@@ -16,10 +16,10 @@ ARG GIT_TAG=1.0.0
 # Container labels (http://label-schema.org/)
 # Container annotations (https://github.com/opencontainers/image-spec)
 LABEL maintainer="Daniel McAssey <hello at glokon dot me>" \
-      product="Apache Guacamole-Lite WebSocket Server" \
+      product="Apache Guacamole WebSocket Server" \
       version=$GIT_TAG \
       org.label-schema.vcs-ref=$GIT_SHA \
-      org.label-schema.vcs-url="https://github.com/Monogramm/docker-guacd" \
+      org.label-schema.vcs-url="https://github.com/GLOKON/guacws" \
       org.label-schema.name="Apache Guacamole Server" \
       org.label-schema.description="Guacamole proxy daemon." \
       org.label-schema.url="https://guacamole.apache.org/" \
@@ -27,7 +27,7 @@ LABEL maintainer="Daniel McAssey <hello at glokon dot me>" \
       org.label-schema.version=$GIT_TAG \
       org.label-schema.schema-version="1.0" \
       org.opencontainers.image.revision=$GIT_SHA \
-      org.opencontainers.image.source="https://github.com/Monogramm/docker-guacd" \
+      org.opencontainers.image.source="https://github.com/GLOKON/guacws" \
       org.opencontainers.image.title="Apache Guacamole Server" \
       org.opencontainers.image.description="Guacamole proxy daemon." \
       org.opencontainers.image.url="https://guacamole.apache.org/" \
