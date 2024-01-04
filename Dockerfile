@@ -40,6 +40,8 @@ ENV GUACD_PORT=4822
 ENV CRYPT_CYPHER='AES-256-CBC'
 ENV LOG_LEVEL='info'
 ENV USER_DRIVE_ROOT='/user-drives'
+ENV SSL_CERT_PATH='/app/certificate.pem'
+ENV SSL_KEY_PATH='/app/certificate-key.pem'
 EXPOSE 8080
 
 RUN mkdir -p /user-drives && chown -R guacd:guacd /user-drives
