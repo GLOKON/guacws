@@ -1,3 +1,10 @@
+## [0.14.2](https://github.com/glokon/guacws/compare/v0.14.1...v0.14.2) (2024-01-04)
+
+
+### Bug Fixes
+
+* **ref:** fix references ([3df156b](https://github.com/glokon/guacws/commit/3df156bd8d48d05a72fb81b3d81ee84861ad5b01))
+
 ## [0.14.1](https://github.com/glokon/guacws/compare/v0.14.0...v0.14.1) (2024-01-04)
 
 
