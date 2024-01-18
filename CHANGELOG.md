@@ -1,3 +1,10 @@
+## [0.14.3](https://github.com/glokon/guacws/compare/v0.14.2...v0.14.3) (2024-01-18)
+
+
+### Bug Fixes
+
+* **docker:** dont use latest ([10501b3](https://github.com/glokon/guacws/commit/10501b37513e1eaddb421956e847433a2b33df97))
+
 ## [0.14.2](https://github.com/glokon/guacws/compare/v0.14.1...v0.14.2) (2024-01-04)
 
 
